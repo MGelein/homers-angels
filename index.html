@@ -8,46 +8,143 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/paleo.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <title>HMT Paleo Corrector</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Homers Angels</title>
 </head>
 <body>
-  <div id="backButtonHolder"><a href="../" type="button" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-backward"></i>&nbsp;More Tools</a></div>
-  <div id="notification" class="hidden"><p id="notificationText" class="text-center"></p></div>
+
   <div id="header" class="jumbotron text-center">
-    <p id="copyright" class="pull-right text-right">Written by Mees Gelein<br>
-      &copy;2017 under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0 license</a>
-    </p>
-    <h1>Paleo .CEX Corrector</h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Leidse Manuscripten Club</h3>
+        <h4>Lees en verklaar Homerus!</h4>
+      </div>
+      <div class="col-sm-6">
+        <h1 id="logo">Homers Angels</h1>
+      </div>
+      <div class="col-sm-3">
+        <h3>Volgende Meeting:</h3>
+        <h4>Maandag 37 Januari</h4>
+      </div>
+    </div>
   </div>
+
+  <nav id="nav" class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Informatie</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="container">
     <div class="row">
-      <div class="panel panel-danger">
-        <div class="panel-heading">Are you getting tired of <em>manually</em> counting letters?</div>
+      <div class="panel panel-default">
         <div class="panel-body">
-          <p>This tool can be used to <b>automatically count</b> your paleography letters in the documents you created for the HMT project as well
-          as ensuring your URNS in the first column are all unique and nicely in sequence.</p>
-          <h4>How does it work?</h4>
-          <ol>
-            <li><code>Copy</code> the text contents of your <code>.cex</code> file.</li>
-            <li><code>Paste</code> the text contents in the textfield below. If there is still text in the textfield first press the <span class="btn btn-xs btn-default fake">Clear textfield</span> button</li>
-            <li>Press the <span class="btn btn-primary btn-xs fake">Check and Correct</span> button below to check and correct the text</li>
-            <li>Once the text is corrected it is <em>automatically</em> added to your clipboard, you <b>don't</b> need to copy it. You can immediately paste it back into your <code>.cex</code> file in your repo.</li>
-          </ol>
+          <div class="col-sm-4">
+            <h2>Wie zijn Homers Angels</h2>
+            <p>Homers Angels is een groep die bla en bla en ook nog dingen doet die bovendien dingen list en heroisch is en die ook nog eens en toen en toen </p>
+            <h2>Wat is het Homer Multitext project?</h2>
+            <p>Het Homer Multitext project, ook wel tot <em>HMT</em> afgekort is een project dat probeert met manuscripten bla bla en die bla bla bla en ook zodoende maar niet alsnog</p>
+            <a href="HOMERMULTITEXT" class="btn btn-primary"><span class="fa fa-external-link"></span>&nbsp;Klik hier om naar de HMT pagina te gaan</a>
+          </div>
+          <div class="col-sm-8">
+            <img class="img-responsive" src="img/samenwerken.jpg"/>
+            <span class="image-text">Een leessessie van Homers Angels.</span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-xs-6"><input type="button" class="btn btn-primary btn-block" value="Check and Correct" onclick="parseText()"/></div>
-      <div class="col-xs-6"><input type="button" class="btn btn-default btn-block" value="Clear textfield" onclick="$('#textField').val('')"></div>
-      <div class="col-xs-12">
-      <textarea id="textField" style="margin-bottom:2em;" rows="15" class='form-control' placeholder="Paste your .cex contents over here"></textarea>
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Media</h3>
+            <img src="img/media_thumb.jpg" class="img-responsive img-rounded"/><br>
+            <p>Op deze pagina kunt u allerlei afbeeldingen en andere media items vinden gerelateerd aan onze leesgroep.</p>
+            <a class="btn btn-primary pull-right" href="#">Lees verder...</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Tools</h3>
+            <img src="img/tools_thumb.jpg" class="img-responsive img-rounded"/><br>
+            <p>Op deze pagina kunt u een link vinden naar alle tools van Homers Angels die worden gebruikt tijdens de leessessies.</p>
+            <a class="btn btn-primary pull-right" href="#">Lees verder...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Informatie</h3>
+            <img src="img/informatie_thumb.jpg" class="img-responsive img-rounded"/><br>
+            <p>Hier vindt u een verzameling van externe links en beschrijving van de werkwijzen. Van installatie van de software tot XML standaarden.</p>
+            <a class="btn btn-primary pull-right" href="#">Lees verder...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Contact</h3>
+            <img src="img/contact_thumb.jpg" class="img-responsive img-rounded"/><br>
+            <p>Wilt u met ons in contact komen? Dan kunt u op deze pagina alle contactgegevens vinden om de juiste persoon te vinden.</p>
+            <a class="btn btn-primary pull-right" href="#">Lees verder...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Wat is de Ilias?</h2>
+            <p>Hier moet een langdradig maar niet saai antwoord komen over wat de Ilias is zodat we in het kort kunnen uitleggen wat de traditie hierachter is. Hier moet een langdradig maar niet saai antwoord komen over wat de Ilias is zodat we in het kort kunnen uitleggen wat de traditie hierachter is. Hier moet een langdradig maar niet saai antwoord komen over wat de Ilias is zodat we in het kort kunnen uitleggen wat de traditie hierachter is. Hier moet een langdradig maar niet saai antwoord komen over wat de Ilias is zodat we in het kort kunnen uitleggen wat de traditie hierachter is</p>
+            <h2>Wie was Homerus?</h2>
+            <p>Hier moet een klein beetje uitleg over de Homerische kwestie en de uitleg waarom dit project gedaan wordt. Dit is een uitbreiding op het 2e kopje van de pagina. Hier moet een klein beetje uitleg over de Homerische kwestie en de uitleg waarom dit project gedaan wordt. Dit is een uitbreiding op het 2e kopje van de pagina. Hier moet een klein beetje uitleg over de Homerische kwestie en de uitleg waarom dit project gedaan wordt. Dit is een uitbreiding op het 2e kopje van de pagina. Hier moet een klein beetje uitleg over de Homerische kwestie en de uitleg waarom dit project gedaan wordt. Dit is een uitbreiding op het 2e kopje van de pagina</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Onze andere websites:</h4>
+          <span class="fa fa-4x fa-facebook-square"></span>
+          <span class="fa fa-4x fa-github-square"></span>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h4>Externe links:</h4>
+          <a href="#"><span class="fa fa-external-link-square"></span>&nbsp;Homer Multitext Homepage</a><br>
+          <a href="#"><span class="fa fa-external-link-square"></span>&nbsp;CITE URN uitleg</a><br>
+          <a href="#"><span class="fa fa-external-link-square"></span>&nbsp;HMT manuscript browser</a><br>
+        </div>
+        <div class="col-sm-4 text-right" >
+          <h4>Credits:</h4>
+          <p id="copyright">Website ontwerp en bouw door Mees Gelein<br>
+            &copy;2017 under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0 license</a><br>
+            find the project on <a href="GITHUB">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
