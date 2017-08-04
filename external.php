@@ -5,7 +5,7 @@ require_once 'class/template.php';
 
 //render the header
 $headerTemplate = new Template('templates/header.html');
-$headerTemplate->replaceVars(array('htmlTitle' => "Homer's Angels - Home"));
+$headerTemplate->replaceVars(array('htmlTitle' => "Homer's Angels - External"));
 echo $headerTemplate->display();
 
 //render the main home content here
