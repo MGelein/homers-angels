@@ -8,8 +8,6 @@ $headerTemplate = new Template('templates/header.html');
 $headerTemplate->replaceVars(array('htmlTitle' => "Homer's Angels - Data"));
 echo $headerTemplate->display();
 
-
-
 //render the main home content here
 $homeTemplate = new Template('templates/data.html');
 echo $homeTemplate->display();
