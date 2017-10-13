@@ -14,6 +14,6 @@ echo $homeTemplate->display();
 
 //rendering the footer
 $footerTemplate = new Template('templates/footer.html');
-$footerTemplate->replaceVars(array('navID' => 'nav_tools'));
+$footerTemplate->replaceVars(array('navID' => 'nav_support'));
 echo $footerTemplate->display();
 ?>
